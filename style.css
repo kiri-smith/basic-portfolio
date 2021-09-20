@@ -12,7 +12,7 @@
     padding: 20px;
     text-align: center;
     background: black;
-    color: rgb(57, 203, 214);
+    color: rgb(16, 207, 207);
   }
   
   nav {
@@ -23,13 +23,23 @@
   nav a {
     padding: 14px 20px;
     text-decoration: none;
-    border: dotted 1px rgb(209, 57, 214);
+    border: dotted 1px white);
     color: white;
     background-color: pink;
   }
   
   main {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: stretch;
+    align-content: space-between;
+  }
+
+  main img {
+    height: 50px;
+    width: 300px;
   }
   
   aside {
@@ -45,30 +55,29 @@
     float: left;
     }
 
-  aside h2 {
-      text-align: center;
-  }
-
+    aside header {
+        text-align: left;
+        color: pink;
+    }
 .About-Me {
    
 }
-  
-  section {
-    flex: 70%;
-    border: rgb(209, 57, 214) dotted 1px;
-    float: right;
-  }
-
-
 
   .My-Work {
     padding: 50px;
-    border: solid yellow 2px;
-    
+    border: dashed pink 2px;
+    margin: 10px, 50px, 10px, 50px;
+    display: flex;
+    flex-direction: column;
   }
 
-  .card {
-    border: solid yellow 2px;
+  .My-Work header {
+      color: pink;
+  }
+
+  #app1 img {
+      height: 100px;
+      width: 600px;
   }
   
   footer {
@@ -97,21 +106,22 @@
   /* Tablets - header changes color */
   @media screen and (max-width: 992px) {
     header {
-      background: #772014;
+      background:black;
+      
     }
   }
   
   /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
     nav {
-      background-color: #bb8588;
+      background-color: black;
     }
   }
   
   /* Small smartphones - image placeholders change color */
   @media screen and (max-width: 576px) {
     .sample-img {
-      background-color: #8ac4ff;
+      background-color: black;
     }
   }
   
