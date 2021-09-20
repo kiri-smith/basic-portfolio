@@ -1,0 +1,118 @@
+* {
+       box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: black;
+  }
+  
+  header {
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: rgb(57, 203, 214);
+  }
+  
+  nav {
+    display: flex;
+    display: block;
+  }
+  
+  nav a {
+    padding: 14px 20px;
+    text-decoration: none;
+    border: dotted 1px rgb(209, 57, 214);
+    color: white;
+    background-color: pink;
+  }
+  
+  main {
+    display: flex;
+  }
+  
+  aside {
+    flex: 30%;
+    padding: 10px;
+    flex-wrap: wrap;
+    color: white;
+  }
+    
+ aside img {
+    height: 100%;
+    width: 250px;
+    float: left;
+    }
+
+  aside h2 {
+      text-align: center;
+  }
+
+.About-Me {
+   
+}
+  
+  section {
+    flex: 70%;
+    border: rgb(209, 57, 214) dotted 1px;
+    float: right;
+  }
+
+
+
+  .My-Work {
+    padding: 50px;
+    border: solid yellow 2px;
+    
+  }
+
+  .card {
+    border: solid yellow 2px;
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: #fff;
+  }
+  
+  /* Image Placeholders */
+  .sample-img {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+    border: 1px solid black;
+  }
+  
+  /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+  /*common breakpoints for widths of devices:
+    • 320px — 480px: Mobile devices
+    • 481px — 768px: iPads, Tablets
+    • 769px — 1024px: Small screens, laptops
+    • 1025px — 1200px: Desktops, large screens*/
+  
+  /* Tablets - header changes color */
+  @media screen and (max-width: 992px) {
+    header {
+      background: #772014;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: #bb8588;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  }
+  
+  
