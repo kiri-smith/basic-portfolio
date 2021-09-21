@@ -12,7 +12,7 @@
     padding: 20px;
     text-align: center;
     background: black;
-    color: rgb(16, 207, 207);
+    color: white;
   }
   
   nav {
@@ -28,20 +28,6 @@
     background-color: pink;
   }
   
-  main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: stretch;
-    align-content: space-between;
-  }
-
-  main img {
-    height: 50px;
-    width: 300px;
-  }
-  
   aside {
     flex: 30%;
     padding: 10px;
@@ -54,30 +40,43 @@
     width: 250px;
     float: left;
     }
-
-    aside header {
+  
+  aside header {
         text-align: left;
         color: pink;
     }
-.About-Me {
-   
-}
 
-  .My-Work {
+    main {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: left;
+      align-items: stretch;
+      align-content: space-between;
+    }
+  
+    main img {
+      width: 100%;
+    }
+    
+  .card {
     padding: 50px;
     border: dashed pink 2px;
     margin: 10px, 50px, 10px, 50px;
     display: flex;
     flex-direction: column;
+    width: 50%;
   }
 
-  .My-Work header {
-      color: pink;
+  .card a {
+      color: white;
+      text-decoration: underline;
+      text-align: center;
+      padding: 20px;
   }
 
-  #app1 img {
-      height: 100px;
-      width: 600px;
+  #app1 {
+    width:100%;
   }
   
   footer {
@@ -86,15 +85,11 @@
     background: black;
     color: #fff;
   }
-  
-  /* Image Placeholders */
-  .sample-img {
-    background-color: #fff;
-    width: 100%;
+
+  footer a {
     padding: 20px;
-    height: 200px;
-    border: 1px solid black;
   }
+
   
   /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
   /*common breakpoints for widths of devices:
