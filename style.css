@@ -1,4 +1,12 @@
-* {
+* 
+.element {
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+{
        box-sizing: border-box;
   }
   
@@ -120,4 +128,27 @@
     }
   }
   
-  
+  @media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main,
+    nav {
+      flex-direction: column;
+      /*https://css-tricks.com/almanac/properties/f/flex-direction/*/
+    }
+    /* Make the sidebar stack below the body */
+    aside {
+      order: 1;/* appears second */
+      /*oder in the sequence*/
+      /*https://www.w3schools.com/cssref/css3_pr_order.asp*/
+      /*Default value 0. Specifies the order for the flexible item*/
+    }
+    /* Change the header background */
+    header {
+      background:black;
+    }
+    /* Change the navbar and footer background */
+    nav,
+    footer {
+      background-color: black;
+    }
+  }

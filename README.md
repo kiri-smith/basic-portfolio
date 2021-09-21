@@ -33,5 +33,6 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-* Jerome Chenette: for imparting tips, tricks, and wisdom of coding with my cohort
-* My peers for answering questions, pushing me to excel and supporting this journey
+* Jerome Chenette - for imparting tips, tricks, and wisdom of coding with my cohort
+* My peers - for answering questions, pushing me to excel and supporting this journey
+* Meyer Web [https://meyerweb.com/eric/tools/css/reset/] - for css reset template
