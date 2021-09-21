@@ -1,12 +1,4 @@
-* 
-.element {
-  -webkit-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  -o-transform: rotate(60deg);
-  transform: rotate(60deg);
-}
-
-{
+* {
        box-sizing: border-box;
   }
   
@@ -78,9 +70,7 @@
 
   .card a {
       color: white;
-      text-decoration: underline;
-      text-align: center;
-      padding: 20px;
+      cursor: pointer;
   }
 
   #app1 {
@@ -98,57 +88,21 @@
     padding: 20px;
   }
 
-  
-  /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
-  /*common breakpoints for widths of devices:
-    • 320px — 480px: Mobile devices
-    • 481px — 768px: iPads, Tablets
-    • 769px — 1024px: Small screens, laptops
-    • 1025px — 1200px: Desktops, large screens*/
-  
-  /* Tablets - header changes color */
   @media screen and (max-width: 992px) {
     header {
       background:black;
       
     }
   }
-  
-  /* Large smartphones - navbar changes color */
+
   @media screen and (max-width: 768px) {
     nav {
       background-color: black;
     }
   }
-  
-  /* Small smartphones - image placeholders change color */
+
   @media screen and (max-width: 576px) {
     .sample-img {
-      background-color: black;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
-    main,
-    nav {
-      flex-direction: column;
-      /*https://css-tricks.com/almanac/properties/f/flex-direction/*/
-    }
-    /* Make the sidebar stack below the body */
-    aside {
-      order: 1;/* appears second */
-      /*oder in the sequence*/
-      /*https://www.w3schools.com/cssref/css3_pr_order.asp*/
-      /*Default value 0. Specifies the order for the flexible item*/
-    }
-    /* Change the header background */
-    header {
-      background:black;
-    }
-    /* Change the navbar and footer background */
-    nav,
-    footer {
       background-color: black;
     }
   }
